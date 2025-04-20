@@ -101,7 +101,6 @@ A `defaultdict(dict)` maps each `(word → URL)` pair to its frequency (number o
 | Ranking by frequency | ✅ | As described in final paragraph |
 | Alphabetical tie-breaking | ✅ | Stable and consistent sort |
 | Boundary case handling | ✅ | Input validation included |
-| Crawler (Optional) | 🟡 | Optional crawler file implemented but not activated in `engine.py` |
 
 ## 5. Boundary Conditions Tested
 
