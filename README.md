@@ -8,7 +8,7 @@ This project implements a **simplified search engine** as described in **Section
 - Trie-based inverted index
 - Stop word removal
 - Single-word and multi-word queries
-- Ranked result retrieval (optional strict or partial match)
+- Ranked result retrieval (strict match)
 - Boundary condition handling
 
 ## 1. Data Structures Used
@@ -57,14 +57,6 @@ A `defaultdict(dict)` maps each `(word → URL)` pair to its frequency (number o
   - Number of matched keywords.
   - Total word frequencies.
   - (Tie-breaker) Alphabetical order of URLs.
-
-### 🔍 Multi-word OR Ranked Search (`ranked_search`) *(optional feature)*
-
-- Includes any page with **at least one** matched word.
-- Scores and ranks based on:
-  - Number of unique matched words.
-  - Total frequency.
-  - Alphabetical tie-breaker.
 
 ### 📑 Text Preprocessing
 
